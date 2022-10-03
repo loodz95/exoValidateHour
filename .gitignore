@@ -1,0 +1,11 @@
+# Pas de synchro des node_modules -> réinstaller via `npm install`
+node_modules
+
+# Pas de synchro des dist car généré par parcel
+dist
+
+# Pas de synchro des .parcel-cache car généré par parcel
+.parcel-cache
+
+# Ignorer les fichiers système sur MacOS
+.DS_Store

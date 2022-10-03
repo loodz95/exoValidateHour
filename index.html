@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation d'heure</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="./src/index.ts" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Bienvenue dans notre outil de validation de format d'heure</h1>
+    <p>
+      Avant de pouvoir utiliser cet outils vous devez compléter la fonction <code>validate</code> dans le fichier
+      <code>index.ts</code>.
+      La fonction doit :
+    <ul>
+      <li>Prendre <strong>1 paramètre</strong> qui sera une <strong>chaine de caractère</strong></li>
+      <li>Vérifier que cette chaine de caractère à <strong>au moins 1 caractère</strong> et que <strong>son format
+          est bon</strong> (HH:MM) </li>
+      <li>Retourner <strong>true</strong> si le format est correct, sinon <strong>false</strong></li>
+    </ul>
+    Exemples :
+    <ul>
+      <li>"13:58" : true</li>
+      <li>"01:32" : true</li>
+      <li>"24:35" : false</li>
+      <li>"13:76" : false</li>
+    </ul>
+    A toi de jouer !!! Pour tester tu peux saisir une heure de début de rendez-vous et de fin de rendez-vous puis
+    cliquer sur le
+    bouton vérification pour voir ta fonction en action ! (fait un test avec un format correct et un autre avec un
+    format incorrect)
+    </p>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="startRdv" class="form-label">Heure de début de rendez-vous</label>
+          <input type="text" class="form-control" id="startRdv">
+        </div>
+        <div class="col-md-6">
+          <label for="endRdv" class="form-label">Heure de fin de rendez-vous</label>
+          <input type="text" class="form-control" id="endRdv">
+        </div>
+      </div>
+      <div class="row invisible" id="error">
+        💻 Il faut d'abord implémenter la fonction encode pour voir le résultat 😉
+      </div>
+
+      <button class="btn btn-success mt-3" type="submit">Vérification</button>
+    </form>
+  </main>
+</body>
+
+</html>
